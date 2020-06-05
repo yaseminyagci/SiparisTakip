@@ -1,0 +1,64 @@
+﻿@model IEnumerable<SiparisTakip.Entities.Model.Kullanici>
+
+@{
+    ViewBag.Title = "Listele";
+}
+
+<h2>Listele</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            KullaniciAdi
+        </th>
+        <th>
+            KullaniciSoyadi
+        </th>
+        <th>
+            KullaniciKodu
+        </th>
+        <th>
+            Parola
+        </th>
+        <th>
+            KayitZamani
+        </th>
+        <th>
+            Aktif
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KullaniciAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KullaniciSoyadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KullaniciKodu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parola)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KayitZamani)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aktif)
+            </td>
+            <td>
+                @Html.ActionLink("Update", "Update", new {  id=item.KullaniciID  }) | 
+                @Html.ActionLink("detay", "detay", new {  id=item.KullaniciID }) |
+                @Html.ActionLink("sil","sil", new {  id=item.KullaniciID  })
+            </td>
+        </tr>
+    }
+
+</table>

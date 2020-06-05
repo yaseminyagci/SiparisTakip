@@ -1,0 +1,22 @@
+﻿@model IEnumerable<SiparisTakip.Entities.Model.Cari>
+
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.YetkiliAdi
+        </li>
+    }
+
+@*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CariAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YetkiliAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YetkiliSoyadi)
+            </th>
+    </tr>
+    </table>*@

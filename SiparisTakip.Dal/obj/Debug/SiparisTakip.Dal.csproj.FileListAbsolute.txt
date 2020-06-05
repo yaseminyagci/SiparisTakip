@@ -1,0 +1,16 @@
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Dal.dll.config
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Dal.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Dal.pdb
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\EntityFramework.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Entities.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Entities.pdb
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Entities.dll.config
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\EntityFramework.xml
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\obj\Debug\SiparisTakip.Dal.csprojAssemblyReference.cache
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\obj\Debug\SiparisTakip.Dal.csproj.CopyComplete
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\obj\Debug\SiparisTakip.Dal.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\obj\Debug\SiparisTakip.Dal.pdb
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Interfaces.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Dal\bin\Debug\SiparisTakip.Interfaces.pdb

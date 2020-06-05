@@ -1,0 +1,62 @@
+﻿@model List<SiparisTakip.Entities.Model.Cari>
+
+@{
+    ViewBag.Title = "CariList";
+}
+
+<h2>CariList</h2>
+<ul id="liste" class="list-group">
+
+</ul>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Cari Adı
+        </th>
+        <th>
+            Yetkili Adı
+        </th>
+        <th>
+            Yetkili Soyadı
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CariAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YetkiliAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YetkiliSoyadi)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+   $(document).ready(function(){
+        debugger;;
+        $.get("/Cari/_partialCari", function (data) {
+        console.log(data);
+        $("#liste").html(data);
+        });
+    });
+</script>
+

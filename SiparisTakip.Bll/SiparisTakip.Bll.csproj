@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11F470DC-3026-4375-80D2-0E9D61A0E034}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiparisTakip.Bll</RootNamespace>
+    <AssemblyName>SiparisTakip.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheFonksiyon.cs" />
+    <Compile Include="CariManager.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="GenericManager.cs" />
+    <Compile Include="KullaniciManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StokManager.cs" />
+    <Compile Include="ToPasswordRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiparisTakip.Cache\SiparisTakip.Cache.csproj">
+      <Project>{A41C4F07-F658-490A-BB43-71561ECB9A53}</Project>
+      <Name>SiparisTakip.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiparisTakip.Dal\SiparisTakip.Dal.csproj">
+      <Project>{94D955A8-D88B-4871-816E-E89393EC2F1B}</Project>
+      <Name>SiparisTakip.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiparisTakip.Entities\SiparisTakip.Entities.csproj">
+      <Project>{E6F8FADB-6EA9-464D-9583-B05F274466E4}</Project>
+      <Name>SiparisTakip.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiparisTakip.Interfaces\SiparisTakip.Interfaces.csproj">
+      <Project>{FAB3F5E6-7318-428B-B1E1-469D848F5E78}</Project>
+      <Name>SiparisTakip.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,9 @@
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\bin\Debug\SiparisTakip.Interfaces.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\bin\Debug\SiparisTakip.Interfaces.pdb
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\bin\Debug\SiparisTakip.Entities.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\bin\Debug\SiparisTakip.Entities.pdb
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\bin\Debug\SiparisTakip.Entities.dll.config
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\obj\Debug\SiparisTakip.Interfaces.csprojAssemblyReference.cache
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\obj\Debug\SiparisTakip.Interfaces.csproj.CopyComplete
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\obj\Debug\SiparisTakip.Interfaces.dll
+C:\Users\Yasemin\source\repos\SiparisProject\SiparisTakip.Interfaces\obj\Debug\SiparisTakip.Interfaces.pdb

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6F8FADB-6EA9-464D-9583-B05F274466E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiparisTakip.Entities</RootNamespace>
+    <AssemblyName>SiparisTakip.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Aksesuar.cs" />
+    <Compile Include="Model\Appointments.cs" />
+    <Compile Include="Model\Ayarlar.cs" />
+    <Compile Include="Model\BankaHesap.cs" />
+    <Compile Include="Model\BankaHesapHareket.cs" />
+    <Compile Include="Model\Cari.cs" />
+    <Compile Include="Model\CariHareket.cs" />
+    <Compile Include="Model\CariStokFiyat.cs" />
+    <Compile Include="Model\Fatura.cs" />
+    <Compile Include="Model\FaturaDetay.cs" />
+    <Compile Include="Model\Il.cs" />
+    <Compile Include="Model\Ilce.cs" />
+    <Compile Include="Model\Isyeri.cs" />
+    <Compile Include="Model\Kasa.cs" />
+    <Compile Include="Model\Kullanici.cs" />
+    <Compile Include="Model\KullaniciYetki.cs" />
+    <Compile Include="Model\Maas.cs" />
+    <Compile Include="Model\MaasHareket.cs" />
+    <Compile Include="Model\Marka.cs" />
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="Model\Personel.cs" />
+    <Compile Include="Model\Resources.cs" />
+    <Compile Include="Model\RutHareketPlani.cs" />
+    <Compile Include="Model\Sabit.cs" />
+    <Compile Include="Model\Satis.cs" />
+    <Compile Include="Model\SatisDetay.cs" />
+    <Compile Include="Model\Sektor.cs" />
+    <Compile Include="Model\Stok.cs" />
+    <Compile Include="Model\StokDepo.cs" />
+    <Compile Include="Model\StokETicaret.cs" />
+    <Compile Include="Model\StokHareket.cs" />
+    <Compile Include="Model\StokLog.cs" />
+    <Compile Include="Model\StokResim.cs" />
+    <Compile Include="Model\StokSayim.cs" />
+    <Compile Include="Model\StokSayimDetay.cs" />
+    <Compile Include="Model\StokVaryant.cs" />
+    <Compile Include="Model\sysdiagrams.cs" />
+    <Compile Include="Model\Tanim.cs" />
+    <Compile Include="Model\TanimGrup.cs" />
+    <Compile Include="Model\TeknikServis.cs" />
+    <Compile Include="Model\Ulke.cs" />
+    <Compile Include="Model\vw_BankaHesap.cs" />
+    <Compile Include="Model\vw_BankaHesapHareket.cs" />
+    <Compile Include="Model\vw_CariBakiye.cs" />
+    <Compile Include="Model\vw_CariHareket.cs" />
+    <Compile Include="Model\vw_Fatura.cs" />
+    <Compile Include="Model\vw_FaturaDetay.cs" />
+    <Compile Include="Model\vw_Kullanici.cs" />
+    <Compile Include="Model\vw_SatisDetayListesi.cs" />
+    <Compile Include="Model\vw_SatisListesi.cs" />
+    <Compile Include="Model\vw_StokDetayliHesapEkstresi.cs" />
+    <Compile Include="Model\vw_StokHareketListesi.cs" />
+    <Compile Include="Model\vw_StokListesi.cs" />
+    <Compile Include="Model\vw_StokSayim.cs" />
+    <Compile Include="Model\vw_StokVaryantListesi.cs" />
+    <Compile Include="Model\vw_TeknikServis.cs" />
+    <Compile Include="Model\Yetki.cs" />
+    <Compile Include="PocoModels\PocoKullanici.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ModelViews\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
